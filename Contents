@@ -2,9 +2,7 @@
 Repository of notes for the Microsoft 70-461 Querying SQL Server 2012 Certification
 
 ## Table of Contents
-- **Introduction to Transact\-SQL**
-  - What is Transact-SQL?
-  - Relational Databases
+- **Introduction to Relational Databases
   - Schemas and Object Names
   - SQL Statement Types
   - The SELECT Statement
