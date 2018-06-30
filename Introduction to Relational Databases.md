@@ -1,4 +1,4 @@
-# Introduction to Relational Databases
+# Introduction to Relational Databases and SQL
 
    Man has been keeping track of things since writing and numbers were a thing. We have gone from scratching symbols on leaves and clay 
 tablets to keeping billions of lines of information in a seemingly infinite, invisible space. What would take days or weeks to retrieve 
@@ -40,7 +40,7 @@ This is because vendors often use different versions of SQL to accommodate speci
 SQL may not function with a particular style argument . Microsoft, for example, employs the Transact-SQL (T-SQL) flavor for SQL Server, 
 Access, and Azure; while companies like Oracle use PL-SQL.  There are also versions such as GRE-SQL, SQL Lite, and Post-GRE SQL. 
 
-##TLDR;
+## #TLDR;
 
 ### SQL can:
   - Execute queries against a DB
@@ -56,12 +56,13 @@ Access, and Azure; while companies like Oracle use PL-SQL.  There are also versi
 	- BasedSet Theory and Predicate Logic/Predicate Calculus and Relational Algebra
   - Some dialects include
     - SQLite
-		- MySQL
-		- Transact-SQL (focus of this course)
-       - Microsoft 
-        - Query language for SQL Server (Local) and Azure SQL Database (virtual machine)
-        - Can use .NET for CLR functionality within SQL Server
-		- Post-GRE
+    - MySQL
+    - Transact-SQL (focus of this course)
+     - Microsoft 
+      - Query language for SQL Server (Local) and Azure SQL Database (virtual machine)
+       - Can use .NET for CLR functionality within SQL Server
+    - Post-GRE
     - PL/SQL
-      - Oracle
+     - Oracle
+
 
