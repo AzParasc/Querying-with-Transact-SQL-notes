@@ -48,7 +48,7 @@ Access, and Azure; while companies like Oracle use PL-SQL.  There are also versi
   - Insert records
   - Update records
 
-###Structured Query Language 
+### Structured Query Language 
   - Developed in the 1970's making it one of the oldest languages
   - Adopted as a standard by ANSI and ISO standards bodies 
 	- Widely used in the industry
