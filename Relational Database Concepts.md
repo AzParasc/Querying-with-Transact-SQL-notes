@@ -3,12 +3,36 @@
 Each table is designed to contain one type of thing.  Most are normalized with relationships defined between table through unique 
 identifiers, or _constraints_ called primary and foreign keys.  Primary and foreign keys are links between tables, and ensures referential integrity.
 
-## Normalization
->Process of reducing redundant data by organization.  This includes creating tables, and establishing relationships between them. 
+## Relational Database Components
 
-Most databases are designed to three (3) forms of normalization. The last two aren't used as often, disregarding those two normalization rules may result in a less than perfect database, but shouldn’t effect functionality.
-  
+**Database Entity**
+
+>  A material or non-material structure which has its own attributes. An example of database entity could be a simple table that holds a  set of data. Entities are represented as _relations_, or tables in which their attributes are represented as _domains_, or columns.
+
+##	Schemas and Object Names
+
+**Schema**
+
+>  The skeleton structure, or namespace, that logically groups objects such as tables, Views and Stored Procedures, but doesn't actually contain any data itself. 
+
+It does define how the data is organized and how the relations among them are associated, however, by formulating all constraints that are to be applied to the data. The schema is designed when the database doesn't exist at all. Descriptively, it's the name of the source database that the tables are found in, or the source table that the columns are found in. Once the database is in operation, it is difficult to make any changes to the schema. 
+
+Indicating what schema a column belongs to can also help with disambiguation. If we have joined multiple tables in a query, and two or more tables share the same column heading (ie. CustomerID is shared by both the Customer table and the SalesOrderHeader Table) defining the schema can tell SQL Server exactly which column to display from what table. 
+
+**For example, if we wanted to pull information from the customers table, SalesLT.Customer, SalesLT is the schema the customer table is in.** 
+
+The schema may have an alias. When defining the schema in the SELECT statement, and an alias is used, the alias MUST be included in the definition or the query cannot be executed. It's the best practice to include the schema name.
+
+## Normalization
+
+> Process of reducing redundant data by organization.  This includes creating tables, and establishing relationships between them.
+
+
+| <img src= "https://media.slidedb.com/images/members/4/3258/3257136/profile/Frieza_Third_Form_copy.png" Width="525" Height="200">| Most databases are designed to three (3) forms of normalization. The last two aren't used as often, disregarding those two normalization rules may result in a less than perfect database, but shouldn’t effect functionality.|
+---|---
+
 ### Five Normalization Forms
+
 **(1NF) Eliminate repeating groups**
 - Do not use multiple fields in a single table to store similar data. The data is in an entity format, which means the following conditions have been met:
   - Eliminate repeating groups in individual tables
@@ -39,7 +63,8 @@ Most databases are designed to three (3) forms of normalization. The last two ar
 - \[Triggers\] can also be used to enforce referential integrity, however being that triggers require code, they don't execute as quickly as table properties such as a primary key constraint
 
 ## Relational Database Components
-**Database Entitiy**
+
+**Database Entity**
 > A material or non-material structure which has its own attributes. An example of database entity could be a simple table that contains a set of data.
 
 Entities are represented as _relations_, or tables in which their attributes are represented as _domains_, or columns.
@@ -47,13 +72,13 @@ Entities are represented as _relations_, or tables in which their attributes are
 ### Schemas and Object Names
 
 **Schema**
->The skeleton structure, or namespace, that logically groups objects such as tables, views and stored procedures, but doesn't actually contain any data itself. 
+> The skeleton structure, or namespace, that logically groups objects such as tables, views and stored procedures, but doesn't actually contain any data itself. 
 
 It does define how the data is organized and how the relations among them are associated. It formulates all the constraints that are to be applied to the data, and is designed when the database doesn't exist at all. Descriptively, it's the name of the source database that the tables are found in, or the source table that the columns are found in. Once the database is in operation, it is difficult to make any changes to the schema. 
 
 Indicating what schema a column belongs to can also help with disambiguation. If we have joined multiple tables in a query, and two or more tables share the same column heading (ie. CustomerID is shared by both the Customer table and the SalesOrderHeader Table) defining the schema can tell SQL Server exactly which column to display from what table. 
 
->For example, if we wanted to pull information from the customers table, SalesLT.Customer, SalesLT is the schema the customer table is in. 
+**For example, if we wanted to pull information from the customers table, SalesLT.Customer, SalesLT is the schema the customer table is in.** 
 
 The schema may have an alias. When defining the schema in the SELECT statement, and an alias is used, the alias MUST be included in the definition or the query cannot be executed. It's the best practice to include the schema name.
 
